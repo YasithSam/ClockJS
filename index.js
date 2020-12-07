@@ -17,9 +17,11 @@ function DisplayTime(){
     s = (s < 10) ? "0" + s : s;
     
     var time = h + ":" + m + ":" + s + " " + session;
-    document.getElementById("MyClockDisplay").innerText = time;
-    document.getElementById("MyClockDisplay").textContent = time;
+    document.getElementById("myClock").innerText = time;
+    document.getElementById("myClock").textContent = time;
     
     setTimeout(DisplayTime, 1000);
 
 }
+DisplayTime();
+
